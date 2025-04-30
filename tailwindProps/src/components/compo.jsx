@@ -1,8 +1,8 @@
 import React from 'react'
 
-function Compo(props){
-    console.log(props.userName)
-    console.log(props.check)
+function Compo({userName,btnText="Click me"}){
+    console.log(userName)
+    
     return (
         
       <div className="max-w-xs p-6 rounded-md shadow-md bg-black m-10">
@@ -13,9 +13,9 @@ function Compo(props){
       />
       <div className="mt-6 mb-2">
         <span className="block text-sm font-medium font-mono tracking-widest uppercase text-indigo-400">
-          {props.userName}
+          {userName}
         </span>
-        <button>{props.btnText}</button>
+        <button>{btnText}</button>
       </div>
       <p className="text-gray-300">
         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio tempora ipsum soluta

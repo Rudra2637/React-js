@@ -12,11 +12,11 @@ function App() {
   }
   return (
     <>
-      <h1 className="bg-green-300 text-black font-bold p-10
+      <h1 className="bg-green-400 text-black font-bold p-10
       rounded-2xl
       ">Tailwindcss</h1>
       <Compo userName="rudra" btnText="Press Me" />
-      <Compo userName="Pro Coder" btnText="Click Me"/>
+      <Compo userName="Pro Coder" btnText="Press me"/>
     </>
   )
 }

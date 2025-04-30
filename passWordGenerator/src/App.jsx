@@ -22,7 +22,7 @@ function App() {
       pass += str[random]
     }
     setPassword(pass)
-
+  
   },[length,numberAllowed,specialAllowed,setPassword])
 
   const copytoClipboard = useCallback(()=>{
@@ -58,7 +58,7 @@ function App() {
           <div className="flex items-center gap-x-1">
             <input
               type="range"
-              min={6}
+              min={8}
               max={100}
               value={length}
               className="cursor-pointer"
@@ -91,9 +91,7 @@ function App() {
         </div>
           
       </div>
-     
-        
-     </div>
+    </div>
     </>
   )
 }
